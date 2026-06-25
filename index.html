@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的导航站</title>
+
+<style>
+body{
+    background:#0f1115;
+    color:white;
+    font-family:Arial,sans-serif;
+    margin:0;
+    padding:40px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1a1d24;
+    border-radius:12px;
+    padding:20px;
+    transition:.2s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+a{
+    color:#ff6900;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.desc{
+    color:#aaa;
+    margin-top:8px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🚀 我的AI导航</h1>
+
+<div class="grid">
+
+<div class="card">
+<a href="https://chatgpt.com" target="_blank">ChatGPT</a>
+<div class="desc">OpenAI</div>
+</div>
+
+<div class="card">
+<a href="https://claude.ai" target="_blank">Claude</a>
+<div class="desc">Anthropic</div>
+</div>
+
+<div class="card">
+<a href="https://github.com" target="_blank">GitHub</a>
+<div class="desc">代码托管</div>
+</div>
+
+<div class="card">
+<a href="https://dash.cloudflare.com" target="_blank">Cloudflare</a>
+<div class="desc">CDN与Pages</div>
+</div>
+
+</div>
+
+</body>
+</html>
